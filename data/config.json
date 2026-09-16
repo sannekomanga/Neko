@@ -1,0 +1,42 @@
+{
+  "siteName": "NekoManga",
+  "tagline": "Manga online, a tu ritmo",
+  "logoIcon": "🐾",
+  "year": 2026,
+  "palette": {
+    "bg": "#181A2F",
+    "surface": "#242E49",
+    "surfaceAlt": "#37415C",
+    "peach": "#FDA481",
+    "red": "#B4182D",
+    "wine": "#54162B"
+  },
+  "nav": [
+    { "label": "Inicio", "href": "index.html" },
+    { "label": "Catálogo", "href": "catalogo.html" },
+    { "label": "Géneros", "href": "generos.html" },
+    { "label": "Novedades", "href": "novedades.html" },
+    { "label": "Populares", "href": "populares.html" },
+    { "label": "Biblioteca", "href": "biblioteca.html" }
+  ],
+  "footerLinks": {
+    "Explorar": [
+      { "label": "Catálogo", "href": "catalogo.html" },
+      { "label": "Géneros", "href": "generos.html" },
+      { "label": "Novedades", "href": "novedades.html" },
+      { "label": "Recomendaciones", "href": "recomendaciones.html" }
+    ],
+    "Cuenta": [
+      { "label": "Iniciar sesión", "href": "login.html" },
+      { "label": "Crear cuenta", "href": "registro.html" },
+      { "label": "Biblioteca", "href": "biblioteca.html" },
+      { "label": "Favoritos", "href": "favoritos.html" }
+    ],
+    "Legal": [
+      { "label": "Términos de uso", "href": "terminos.html" },
+      { "label": "Privacidad", "href": "privacidad.html" },
+      { "label": "Cookies", "href": "cookies.html" },
+      { "label": "Ayuda", "href": "ayuda.html" }
+    ]
+  }
+}
