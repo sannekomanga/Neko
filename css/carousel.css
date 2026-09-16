@@ -1,0 +1,145 @@
+/* NekoManga — carousel.css (hero de destacados) */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(180, 24, 45, 0.55), transparent 60%),
+    linear-gradient(180deg, var(--wine) 0%, var(--bg) 78%);
+  background-size: 140% 140%;
+  animation: heroDrift 18s ease-in-out infinite;
+}
+
+@keyframes heroDrift {
+  0%, 100% { background-position: 50% 0%, 0% 0%; }
+  50% { background-position: 50% 20%, 0% 10%; }
+}
+
+.hero-track {
+  position: relative;
+  display: flex;
+  transition: transform .6s var(--ease);
+}
+
+.hero-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 0;
+}
+
+.hero-slide-inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: var(--gap-lg);
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: clamp(56px, 9vw, 108px) var(--edge) clamp(48px, 7vw, 76px);
+}
+
+.hero-eyebrow-genres {
+  display: flex;
+  gap: 8px;
+  margin-bottom: var(--gap-sm);
+  flex-wrap: wrap;
+}
+.hero-eyebrow-genres span {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-on-peach);
+  background: var(--peach);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  line-height: 1.08;
+  color: var(--peach);
+  margin-bottom: var(--gap-sm);
+}
+
+.hero-synopsis {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  max-width: 52ch;
+  margin-bottom: var(--gap-md);
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-md);
+  margin-bottom: var(--gap-md);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.hero-meta strong { color: var(--peach); }
+
+.hero-actions { display: flex; gap: var(--gap-sm); flex-wrap: wrap; }
+
+.hero-art {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 40px 70px -30px rgba(0,0,0,0.6);
+  justify-self: center;
+  width: min(100%, 340px);
+}
+
+.hero-art-mark {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 5rem;
+  color: rgba(253, 164, 129, 0.28);
+  font-weight: 700;
+}
+
+.hero-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+.hero-dots button {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--surface-alt);
+  transition: background .2s var(--ease), width .2s var(--ease);
+}
+.hero-dots button[aria-current="true"] {
+  width: 22px;
+  border-radius: var(--radius-pill);
+  background: var(--peach);
+}
+
+.hero-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(24,26,47,0.55);
+  border: 1px solid var(--surface-alt);
+  color: var(--peach);
+  display: grid;
+  place-items: center;
+  transition: background .2s var(--ease), border-color .2s var(--ease);
+}
+.hero-nav:hover { background: rgba(24,26,47,0.85); border-color: var(--peach); }
+.hero-nav.prev { left: var(--gap-sm); }
+.hero-nav.next { right: var(--gap-sm); }

@@ -1,0 +1,118 @@
+/* NekoManga — navbar.css */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(24, 26, 47, 0.72);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid rgba(55, 65, 92, 0.5);
+  transition: background .3s var(--ease), border-color .3s var(--ease);
+}
+
+.navbar.is-scrolled {
+  background: rgba(24, 26, 47, 0.92);
+  border-bottom-color: var(--surface-alt);
+}
+
+.navbar-inner {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--edge);
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-lg);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--peach);
+  margin-right: auto;
+}
+.navbar-brand-icon { font-size: 1.3rem; line-height: 1; }
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-md);
+}
+.navbar-links a {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  position: relative;
+  padding: 6px 2px;
+  transition: color .2s var(--ease);
+}
+.navbar-links a:hover,
+.navbar-links a[aria-current="page"] { color: var(--peach); }
+.navbar-links a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -2px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--red), var(--peach));
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--surface-alt);
+  border-radius: var(--radius-pill);
+  padding: 8px 8px 8px 16px;
+  width: 40px;
+  overflow: hidden;
+  transition: width .32s var(--ease), background .2s var(--ease);
+}
+.navbar-search.is-open { width: 220px; background: var(--surface); }
+.navbar-search-btn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px; height: 22px;
+  color: var(--peach);
+}
+.navbar-search-input {
+  flex: 1;
+  min-width: 0;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 0.88rem;
+  opacity: 0;
+  transition: opacity .2s var(--ease);
+}
+.navbar-search.is-open .navbar-search-input { opacity: 1; }
+.navbar-search-input::placeholder { color: var(--text-faint); }
+.navbar-search-input:focus-visible { outline: none; }
+
+.navbar-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+}
+.navbar-menu-btn span {
+  width: 20px; height: 2px;
+  border-radius: 2px;
+  background: var(--peach);
+  transition: transform .25s var(--ease), opacity .25s var(--ease);
+}
+.navbar.is-menu-open .navbar-menu-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.navbar.is-menu-open .navbar-menu-btn span:nth-child(2) { opacity: 0; }
+.navbar.is-menu-open .navbar-menu-btn span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }

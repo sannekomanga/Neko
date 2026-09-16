@@ -1,0 +1,73 @@
+/* NekoManga — footer.css */
+
+.site-footer {
+  border-top: 1px solid var(--surface-alt);
+  background: linear-gradient(180deg, var(--bg), var(--wine) 220%);
+  margin-top: var(--gap-xl);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(3, 1fr);
+  gap: var(--gap-lg);
+  padding-block: var(--gap-xl) var(--gap-lg);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--peach);
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  max-width: 32ch;
+  margin-bottom: var(--gap-sm);
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-social a {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--surface-alt);
+  display: grid;
+  place-items: center;
+  font-size: 0.9rem;
+  transition: border-color .2s var(--ease), color .2s var(--ease);
+}
+.footer-social a:hover { border-color: var(--peach); color: var(--peach); }
+
+.footer-col h4 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: var(--gap-sm);
+}
+.footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+.footer-col a {
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 500;
+  transition: color .2s var(--ease);
+}
+.footer-col a:hover { color: var(--peach); }
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-md);
+  padding-block: var(--gap-md);
+  border-top: 1px solid var(--surface-alt);
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  flex-wrap: wrap;
+}
