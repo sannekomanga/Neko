@@ -2,7 +2,7 @@
 
 # NEKOMANGA 
 
-**Catálogo web de mangas poco comunes: descubre, lee y guarda joyas ocultas del manga.**
+**CATÁLOGO WEB DE MANGAS POCO COMUNES, DESCUBRE, LEE Y GUARDA JOYAS OCULTAS DEL MANGA.**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -15,19 +15,6 @@
 ## DESCRIPCIÓN
 
 **NekoManga** es una plataforma web dedicada a catalogar y leer mangas **poco conocidos o difíciles de encontrar**. Permite explorar una biblioteca, buscar por título, filtrar por género, leer capítulos, guardar favoritos y participar en una comunidad de lectores.
-
-## TABLA DE CONTENIDOS
-
-- [Características](#características)
-- [Capturas de pantalla](#capturas-de-pantalla)
-- [Tecnologías](#tecnologías)
-- [Estructura del proyecto](#estructura-del-proyecto)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Roadmap](#roadmap)
-- [Contribuir](#contribuir)
-- [Licencia](#licencia)
-- [Autor y contacto](#autor-y-contacto)
 
 ## CARACTERÍSTICAS
 
