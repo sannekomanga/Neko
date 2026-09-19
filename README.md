@@ -14,11 +14,11 @@
 
 ---
 
-## Descripción
+## DESCRIPCIÓN
 
 **NekoManga** es una plataforma web dedicada a catalogar y leer mangas **poco conocidos o difíciles de encontrar**. Permite explorar una biblioteca, buscar por título, filtrar por género, leer capítulos, guardar favoritos y participar en una comunidad de lectores.
 
-## Tabla de contenidos
+## TABLA DE CONTENIDOS
 
 - [Características](#características)
 - [Capturas de pantalla](#capturas-de-pantalla)
@@ -31,7 +31,7 @@
 - [Licencia](#licencia)
 - [Autor y contacto](#autor-y-contacto)
 
-## Características
+## CARACTERÍSTICAS
 
 - **Biblioteca de manga**: explora y organiza el catálogo.
 - **Buscador**: encuentra mangas por título.
@@ -45,28 +45,6 @@
 - **Comunidad**: interacción entre usuarios.
 - **Diseño responsive**: se adapta a móvil, tablet y PC.
 
-## Capturas de pantalla
-
-> Agrega aquí tus capturas. Guárdalas, por ejemplo, en `assets/screenshots/`.
-
-| Inicio | Biblioteca |
-| :---: | :---: |
-| ![Inicio](assets/screenshots/inicio.png) | ![Biblioteca](assets/screenshots/biblioteca.png) |
-
-| Lector | Perfil |
-| :---: | :---: |
-| ![Lector](assets/screenshots/lector.png) | ![Perfil](assets/screenshots/perfil.png) |
-
-## Tecnologías
-
-| Tecnología | Uso |
-| --- | --- |
-| **HTML5** | Estructura de las páginas y componentes |
-| **CSS3** | Estilos, variables, carruseles y diseño responsive |
-| **JavaScript** | Lógica de la interfaz, buscador, filtros, sesión y lector |
-| **JSON** | Datos de mangas, eventos y géneros (`data/`) |
-
-## Estructura del proyecto
 
 ```
 NekoManga/
@@ -92,98 +70,26 @@ NekoManga/
     └── site.json     # Configuración general del sitio
 ```
 
-## Instalación
-
-1. **Clona el repositorio**
-
-   ```bash
-   git clone https://github.com/TU_USUARIO/NekoManga.git
-   cd NekoManga
-   ```
-
-2. **Levanta un servidor local**
-
-   El proyecto carga componentes y archivos JSON con `fetch`, por lo que conviene usar un servidor local en lugar de abrir `index.html` directamente.
-
-   - Con la extensión **Live Server** de VS Code: clic derecho sobre `index.html` y *Open with Live Server*.
-   - Con Python:
-
-     ```bash
-     python -m http.server 8000
-     ```
-
-   - Con Node.js:
-
-     ```bash
-     npx serve .
-     ```
-
-3. **Abre el navegador** en `http://localhost:8000` (o la URL que indique tu servidor).
-
-## Uso
-
-1. Entra al **inicio** para ver los mangas destacados y las novedades.
-2. Ve a la **Biblioteca** y usa el buscador y los filtros por género.
-3. Abre un manga para ver su detalle y la lista de capítulos.
-4. Lee en el **Lector** y guarda tus mangas en **Favoritos**.
-5. Crea una cuenta para administrar tu **Perfil**.
-6. Participa en **Eventos** y en la **Comunidad**.
-
-## Roadmap
+## ROADMAP
 
 - [x] Biblioteca, buscador y filtros
 - [x] Lector de capítulos
 - [x] Favoritos y perfil de usuario
 - [x] Diseño responsive
-- [ ] Sistema de comentarios y valoraciones
-- [ ] Notificaciones de nuevos capítulos
-- [ ] Modo oscuro / claro
-- [ ] Backend y base de datos para cuentas reales
-- [ ] Idiomas adicionales
+- [x] Sistema de comentarios y valoraciones
+- [x] Notificaciones de nuevos capítulos
+- [x] Modo oscuro / claro
+- [x] Backend y base de datos para cuentas reales
+- [x] Idiomas adicionales
 
-> Ajusta las casillas según el estado real del proyecto.
 
-## Contribuir
+## LICENCIA
 
-Las contribuciones son bienvenidas.
+[MIT](https://choosealicense.com/licenses/mit/))
 
-1. Haz un **fork** del repositorio.
-2. Crea una rama para tu cambio:
+## AUTOR
 
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
-   ```
-
-3. Haz commit de tus cambios:
-
-   ```bash
-   git commit -m "feat: agrega nueva funcionalidad"
-   ```
-
-4. Sube la rama:
-
-   ```bash
-   git push origin feature/nueva-funcionalidad
-   ```
-
-5. Abre un **Pull Request** describiendo lo que cambiaste.
-
-También puedes abrir un **issue** para reportar errores o sugerir ideas.
-
-## Licencia
-
-Este proyecto **aún no tiene una licencia definida**. Por defecto, todos los derechos están reservados por el autor.
-
-Si quieres que otros puedan usar o modificar el código, puedes elegir una licencia (por ejemplo, [MIT](https://choosealicense.com/licenses/mit/)) y agregar un archivo `LICENSE` al repositorio.
-
-> **Nota:** el contenido de los mangas (portadas, capítulos, imágenes) pertenece a sus respectivos autores y editoriales.
-
-## Autor y contacto
-
-**Tu Nombre**
-
-- GitHub: [@TU_USUARIO](https://github.com/TU_USUARIO)
-- Email: tu-correo@ejemplo.com
+**neko**
 
 ---
 
