@@ -7,8 +7,6 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Estado](https://img.shields.io/badge/estado-en%20desarrollo-orange?style=for-the-badge)
-![Responsive](https://img.shields.io/badge/dise%C3%B1o-responsive-brightgreen?style=for-the-badge)
 
 </div>
 
@@ -33,17 +31,17 @@
 
 ## CARACTERÍSTICAS
 
-- **Biblioteca de manga**: explora y organiza el catálogo.
-- **Buscador**: encuentra mangas por título.
-- **Filtros avanzados y géneros**: acción, romance, aventura y más.
-- **Lector de manga**: lee capítulos directamente en la plataforma.
-- **Favoritos**: guarda los mangas que más te gustan.
-- **Cuenta de usuario**: inicio de sesión y registro.
-- **Perfil**: administra tu información y tus favoritos.
-- **Actualizaciones**: consulta los nuevos capítulos.
-- **Eventos**: eventos de lectura de la plataforma.
-- **Comunidad**: interacción entre usuarios.
-- **Diseño responsive**: se adapta a móvil, tablet y PC.
+- **Biblioteca de manga**:
+- **Buscador**:
+- **Filtros avanzados y géneros**:
+- **Lector de manga**: 
+- **Favoritos**: 
+- **Cuenta de usuario**: 
+- **Perfil**: 
+- **Actualizaciones**:
+- **Eventos**: 
+- **Comunidad**: 
+- **Diseño responsive**:
 
 
 ```
@@ -84,12 +82,12 @@ NekoManga/
 
 ## AUTOR
 
-**neko**
+**NEKO**
 
 ---
 
 <div align="center">
 
-Hecho para los amantes del manga · **NekoManga**
+Hecho para los amantes del manga · **NEKOMANGA**
 
 </div>
