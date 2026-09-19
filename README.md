@@ -1,6 +1,6 @@
 <div align="center">
 
-# NekoManga
+# NEKOMANGA 
 
 **Catálogo web de mangas poco comunes: descubre, lee y guarda joyas ocultas del manga.**
 
@@ -48,12 +48,12 @@
 
 ```
 NekoManga/
-├── index.html
-├── pages/            # Páginas: biblioteca, manga, lector, eventos, comunidad,
-│                     # perfil, iniciar-sesion, registrarse, contacto,
-│                     # privacidad y términos
-├── css/              # Estilos: variables, main, header, hero, sections, cards,
-│                     # carousel, pages, auth, profile y responsive
+├──index.html 
+├── pages/ Páginas: biblioteca, manga, lector, eventos, comunidad, perfil, iniciar-sesion,
+│                     
+├── css/ Estilos: variables, main, header, hero, sections, cards, carousel, pages, auth,profile, responsive
+│                      
+│                     
 ├── js/
 │   ├── main.js
 │   ├── components/   # header, footer, modal
@@ -81,11 +81,6 @@ NekoManga/
 - [x] Modo oscuro / claro
 - [x] Backend y base de datos para cuentas reales
 - [x] Idiomas adicionales
-
-
-## LICENCIA
-
-[MIT](https://choosealicense.com/licenses/mit/))
 
 ## AUTOR
 
